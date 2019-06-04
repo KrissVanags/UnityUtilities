@@ -7,6 +7,7 @@ using UnityEditor.SceneManagement;
 /// Scene auto loader.
 /// </summary>
 /// <description>
+/// Taken from http://wiki.unity3d.com/index.php/SceneAutoLoader
 /// This class adds a File > Scene Autoload menu containing options to select
 /// a "master scene" enable it to be auto-loaded when the user presses play
 /// in the editor. When enabled, the selected scene will be loaded on play,
@@ -14,6 +15,9 @@ using UnityEditor.SceneManagement;
 ///
 /// Based on an idea on this thread:
 /// http://forum.unity3d.com/threads/157502-Executing-first-scene-in-build-settings-when-pressing-play-button-in-editor
+///
+/// Modified on 4th June 2019:
+/// Changed script to work with additive scene loading
 /// </description>
 [InitializeOnLoad]
 static class SceneAutoLoader
